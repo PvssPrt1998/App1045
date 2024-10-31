@@ -11,6 +11,58 @@
 		99F1A0822CCA2D6A00F6036B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A0812CCA2D6A00F6036B /* ContentView.swift */; };
 		99F1A0842CCA2D6C00F6036B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F1A0832CCA2D6C00F6036B /* Assets.xcassets */; };
 		99F1A0872CCA2D6C00F6036B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F1A0862CCA2D6C00F6036B /* Preview Assets.xcassets */; };
+		99F1A0902CCA2DCF00F6036B /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A08F2CCA2DCF00F6036B /* Splash.swift */; };
+		99F1A0932CCA2DEF00F6036B /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A0922CCA2DEF00F6036B /* CreateAccountView.swift */; };
+		99F1A0952CCA2DF900F6036B /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A0942CCA2DF900F6036B /* CreateAccountViewModel.swift */; };
+		99F1A0972CCA2E1E00F6036B /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A0962CCA2E1E00F6036B /* ViewModelFactory.swift */; };
+		99F1A0992CCA2E2E00F6036B /* DataC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A0982CCA2E2E00F6036B /* DataC.swift */; };
+		99F1A09C2CCA2E5500F6036B /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A09B2CCA2E5500F6036B /* CustomTF.swift */; };
+		99F1A09E2CCA2E7500F6036B /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A09D2CCA2E7500F6036B /* Tab.swift */; };
+		99F1A0FF2CD2DBA300F6036B /* CompetitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A0FE2CD2DBA300F6036B /* CompetitionsView.swift */; };
+		99F1A1012CD2DCA100F6036B /* CompetitionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1002CD2DCA100F6036B /* CompetitionsViewModel.swift */; };
+		99F1A1052CD2E19400F6036B /* Storage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1032CD2E19400F6036B /* Storage.xcdatamodeld */; };
+		99F1A1072CD2E1DA00F6036B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1062CD2E1DA00F6036B /* CoreDataStack.swift */; };
+		99F1A1092CD2E20400F6036B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1082CD2E20400F6036B /* StorageManager.swift */; };
+		99F1A10E2CD2E27E00F6036B /* Income+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A10A2CD2E27E00F6036B /* Income+CoreDataClass.swift */; };
+		99F1A10F2CD2E27E00F6036B /* Income+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A10B2CD2E27E00F6036B /* Income+CoreDataProperties.swift */; };
+		99F1A1102CD2E27E00F6036B /* AffiliateProgram+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A10C2CD2E27E00F6036B /* AffiliateProgram+CoreDataClass.swift */; };
+		99F1A1112CD2E27E00F6036B /* AffiliateProgram+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A10D2CD2E27E00F6036B /* AffiliateProgram+CoreDataProperties.swift */; };
+		99F1A1152CD2E60C00F6036B /* EditIncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1142CD2E60C00F6036B /* EditIncomeView.swift */; };
+		99F1A1172CD2EC6D00F6036B /* EditAffiliationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1162CD2EC6D00F6036B /* EditAffiliationView.swift */; };
+		99F1A11A2CD2F09F00F6036B /* Competition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1192CD2F09F00F6036B /* Competition.swift */; };
+		99F1A11C2CD2F67300F6036B /* NewCompetitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A11B2CD2F67300F6036B /* NewCompetitionView.swift */; };
+		99F1A11E2CD2F7CE00F6036B /* AddTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A11D2CD2F7CE00F6036B /* AddTextField.swift */; };
+		99F1A1202CD2FD2000F6036B /* AddProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A11F2CD2FD2000F6036B /* AddProgramView.swift */; };
+		99F1A1252CD30CC900F6036B /* ProgramCD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1212CD30CC900F6036B /* ProgramCD+CoreDataClass.swift */; };
+		99F1A1262CD30CC900F6036B /* ProgramCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1222CD30CC900F6036B /* ProgramCD+CoreDataProperties.swift */; };
+		99F1A1272CD30CC900F6036B /* CompetitionCD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1232CD30CC900F6036B /* CompetitionCD+CoreDataClass.swift */; };
+		99F1A1282CD30CC900F6036B /* CompetitionCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1242CD30CC900F6036B /* CompetitionCD+CoreDataProperties.swift */; };
+		99F1A12A2CD319FC00F6036B /* CompetitionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1292CD319FC00F6036B /* CompetitionDetails.swift */; };
+		99F1A12C2CD327D700F6036B /* EditCompetition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A12B2CD327D700F6036B /* EditCompetition.swift */; };
+		99F1A12F2CD32BD400F6036B /* EditProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A12E2CD32BD300F6036B /* EditProgramView.swift */; };
+		99F1A1322CD3372900F6036B /* TricksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1312CD3372900F6036B /* TricksView.swift */; };
+		99F1A1342CD3373700F6036B /* TricksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1332CD3373700F6036B /* TricksViewModel.swift */; };
+		99F1A1362CD3406900F6036B /* Trick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1352CD3406900F6036B /* Trick.swift */; };
+		99F1A1382CD3412D00F6036B /* NewTrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1372CD3412D00F6036B /* NewTrick.swift */; };
+		99F1A13A2CD346B300F6036B /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1392CD346B300F6036B /* ImageView.swift */; };
+		99F1A13F2CD353D900F6036B /* ImageData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A13B2CD353D900F6036B /* ImageData+CoreDataClass.swift */; };
+		99F1A1402CD353D900F6036B /* ImageData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A13C2CD353D900F6036B /* ImageData+CoreDataProperties.swift */; };
+		99F1A1412CD353D900F6036B /* TrickCD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A13D2CD353D900F6036B /* TrickCD+CoreDataClass.swift */; };
+		99F1A1422CD353D900F6036B /* TrickCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A13E2CD353D900F6036B /* TrickCD+CoreDataProperties.swift */; };
+		99F1A1442CD355F200F6036B /* TrickDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1432CD355F200F6036B /* TrickDetail.swift */; };
+		99F1A1462CD35B9D00F6036B /* EditTrickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1452CD35B9D00F6036B /* EditTrickView.swift */; };
+		99F1A1492CD365DD00F6036B /* PlacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1482CD365DC00F6036B /* PlacesView.swift */; };
+		99F1A14B2CD366CC00F6036B /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A14A2CD366CC00F6036B /* Place.swift */; };
+		99F1A14D2CD3686600F6036B /* AddPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A14C2CD3686600F6036B /* AddPlaceView.swift */; };
+		99F1A1502CD36D6200F6036B /* PlaceCD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A14E2CD36D6200F6036B /* PlaceCD+CoreDataClass.swift */; };
+		99F1A1512CD36D6200F6036B /* PlaceCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A14F2CD36D6200F6036B /* PlaceCD+CoreDataProperties.swift */; };
+		99F1A1542CD372E600F6036B /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1532CD372E600F6036B /* PostsView.swift */; };
+		99F1A1562CD3745700F6036B /* NewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1552CD3745600F6036B /* NewPost.swift */; };
+		99F1A1582CD3760000F6036B /* PostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1572CD3760000F6036B /* PostDetail.swift */; };
+		99F1A15A2CD37B8300F6036B /* EditPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1592CD37B8200F6036B /* EditPost.swift */; };
+		99F1A15D2CD37E8400F6036B /* PostCD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A15B2CD37E8300F6036B /* PostCD+CoreDataClass.swift */; };
+		99F1A15E2CD37E8400F6036B /* PostCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A15C2CD37E8300F6036B /* PostCD+CoreDataProperties.swift */; };
+		99F1A1602CD37FC000F6036B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A15F2CD37FC000F6036B /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +71,58 @@
 		99F1A0812CCA2D6A00F6036B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		99F1A0832CCA2D6C00F6036B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99F1A0862CCA2D6C00F6036B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		99F1A08F2CCA2DCF00F6036B /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
+		99F1A0922CCA2DEF00F6036B /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		99F1A0942CCA2DF900F6036B /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		99F1A0962CCA2E1E00F6036B /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
+		99F1A0982CCA2E2E00F6036B /* DataC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataC.swift; sourceTree = "<group>"; };
+		99F1A09B2CCA2E5500F6036B /* CustomTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTF.swift; sourceTree = "<group>"; };
+		99F1A09D2CCA2E7500F6036B /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		99F1A0FE2CD2DBA300F6036B /* CompetitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsView.swift; sourceTree = "<group>"; };
+		99F1A1002CD2DCA100F6036B /* CompetitionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsViewModel.swift; sourceTree = "<group>"; };
+		99F1A1042CD2E19400F6036B /* Storage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Storage.xcdatamodel; sourceTree = "<group>"; };
+		99F1A1062CD2E1DA00F6036B /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		99F1A1082CD2E20400F6036B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		99F1A10A2CD2E27E00F6036B /* Income+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Income+CoreDataClass.swift"; sourceTree = "<group>"; };
+		99F1A10B2CD2E27E00F6036B /* Income+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Income+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		99F1A10C2CD2E27E00F6036B /* AffiliateProgram+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AffiliateProgram+CoreDataClass.swift"; sourceTree = "<group>"; };
+		99F1A10D2CD2E27E00F6036B /* AffiliateProgram+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AffiliateProgram+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		99F1A1142CD2E60C00F6036B /* EditIncomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditIncomeView.swift; sourceTree = "<group>"; };
+		99F1A1162CD2EC6D00F6036B /* EditAffiliationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAffiliationView.swift; sourceTree = "<group>"; };
+		99F1A1192CD2F09F00F6036B /* Competition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Competition.swift; sourceTree = "<group>"; };
+		99F1A11B2CD2F67300F6036B /* NewCompetitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCompetitionView.swift; sourceTree = "<group>"; };
+		99F1A11D2CD2F7CE00F6036B /* AddTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTextField.swift; sourceTree = "<group>"; };
+		99F1A11F2CD2FD2000F6036B /* AddProgramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProgramView.swift; sourceTree = "<group>"; };
+		99F1A1212CD30CC900F6036B /* ProgramCD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProgramCD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		99F1A1222CD30CC900F6036B /* ProgramCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProgramCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		99F1A1232CD30CC900F6036B /* CompetitionCD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CompetitionCD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		99F1A1242CD30CC900F6036B /* CompetitionCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CompetitionCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		99F1A1292CD319FC00F6036B /* CompetitionDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionDetails.swift; sourceTree = "<group>"; };
+		99F1A12B2CD327D700F6036B /* EditCompetition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCompetition.swift; sourceTree = "<group>"; };
+		99F1A12E2CD32BD300F6036B /* EditProgramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProgramView.swift; sourceTree = "<group>"; };
+		99F1A1312CD3372900F6036B /* TricksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TricksView.swift; sourceTree = "<group>"; };
+		99F1A1332CD3373700F6036B /* TricksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TricksViewModel.swift; sourceTree = "<group>"; };
+		99F1A1352CD3406900F6036B /* Trick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trick.swift; sourceTree = "<group>"; };
+		99F1A1372CD3412D00F6036B /* NewTrick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrick.swift; sourceTree = "<group>"; };
+		99F1A1392CD346B300F6036B /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		99F1A13B2CD353D900F6036B /* ImageData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		99F1A13C2CD353D900F6036B /* ImageData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		99F1A13D2CD353D900F6036B /* TrickCD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrickCD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		99F1A13E2CD353D900F6036B /* TrickCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrickCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		99F1A1432CD355F200F6036B /* TrickDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickDetail.swift; sourceTree = "<group>"; };
+		99F1A1452CD35B9D00F6036B /* EditTrickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTrickView.swift; sourceTree = "<group>"; };
+		99F1A1482CD365DC00F6036B /* PlacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesView.swift; sourceTree = "<group>"; };
+		99F1A14A2CD366CC00F6036B /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		99F1A14C2CD3686600F6036B /* AddPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceView.swift; sourceTree = "<group>"; };
+		99F1A14E2CD36D6200F6036B /* PlaceCD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaceCD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		99F1A14F2CD36D6200F6036B /* PlaceCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaceCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		99F1A1532CD372E600F6036B /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		99F1A1552CD3745600F6036B /* NewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPost.swift; sourceTree = "<group>"; };
+		99F1A1572CD3760000F6036B /* PostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetail.swift; sourceTree = "<group>"; };
+		99F1A1592CD37B8200F6036B /* EditPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPost.swift; sourceTree = "<group>"; };
+		99F1A15B2CD37E8300F6036B /* PostCD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostCD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		99F1A15C2CD37E8300F6036B /* PostCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		99F1A15F2CD37FC000F6036B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +155,15 @@
 		99F1A07E2CCA2D6A00F6036B /* App1045 */ = {
 			isa = PBXGroup;
 			children = (
+				99F1A1182CD2F09400F6036B /* Model */,
+				99F1A1022CD2E18400F6036B /* CoreData */,
+				99F1A08D2CCA2DAF00F6036B /* Views */,
 				99F1A07F2CCA2D6A00F6036B /* App1045App.swift */,
 				99F1A0812CCA2D6A00F6036B /* ContentView.swift */,
 				99F1A0832CCA2D6C00F6036B /* Assets.xcassets */,
 				99F1A0852CCA2D6C00F6036B /* Preview Content */,
+				99F1A0962CCA2E1E00F6036B /* ViewModelFactory.swift */,
+				99F1A0982CCA2E2E00F6036B /* DataC.swift */,
 			);
 			path = App1045;
 			sourceTree = "<group>";
@@ -65,6 +174,149 @@
 				99F1A0862CCA2D6C00F6036B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		99F1A08D2CCA2DAF00F6036B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				99F1A1522CD372DA00F6036B /* Posts */,
+				99F1A1472CD365C400F6036B /* Places */,
+				99F1A1302CD3371A00F6036B /* Tricks */,
+				99F1A0FD2CD2DB9300F6036B /* CompetitionsView */,
+				99F1A09A2CCA2E3D00F6036B /* Components */,
+				99F1A0912CCA2DE300F6036B /* CreateAccount */,
+				99F1A08E2CCA2DC400F6036B /* Splash */,
+				99F1A09D2CCA2E7500F6036B /* Tab.swift */,
+				99F1A15F2CD37FC000F6036B /* Settings.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		99F1A08E2CCA2DC400F6036B /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				99F1A08F2CCA2DCF00F6036B /* Splash.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		99F1A0912CCA2DE300F6036B /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				99F1A0922CCA2DEF00F6036B /* CreateAccountView.swift */,
+				99F1A0942CCA2DF900F6036B /* CreateAccountViewModel.swift */,
+			);
+			path = CreateAccount;
+			sourceTree = "<group>";
+		};
+		99F1A09A2CCA2E3D00F6036B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				99F1A09B2CCA2E5500F6036B /* CustomTF.swift */,
+				99F1A11D2CD2F7CE00F6036B /* AddTextField.swift */,
+				99F1A1392CD346B300F6036B /* ImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		99F1A0FD2CD2DB9300F6036B /* CompetitionsView */ = {
+			isa = PBXGroup;
+			children = (
+				99F1A1132CD2E5ED00F6036B /* EditStats */,
+				99F1A0FE2CD2DBA300F6036B /* CompetitionsView.swift */,
+				99F1A1002CD2DCA100F6036B /* CompetitionsViewModel.swift */,
+				99F1A11B2CD2F67300F6036B /* NewCompetitionView.swift */,
+				99F1A11F2CD2FD2000F6036B /* AddProgramView.swift */,
+				99F1A1292CD319FC00F6036B /* CompetitionDetails.swift */,
+				99F1A12B2CD327D700F6036B /* EditCompetition.swift */,
+				99F1A12E2CD32BD300F6036B /* EditProgramView.swift */,
+			);
+			path = CompetitionsView;
+			sourceTree = "<group>";
+		};
+		99F1A1022CD2E18400F6036B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				99F1A1122CD2E28200F6036B /* Sub */,
+				99F1A1032CD2E19400F6036B /* Storage.xcdatamodeld */,
+				99F1A1062CD2E1DA00F6036B /* CoreDataStack.swift */,
+				99F1A1082CD2E20400F6036B /* StorageManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		99F1A1122CD2E28200F6036B /* Sub */ = {
+			isa = PBXGroup;
+			children = (
+				99F1A15B2CD37E8300F6036B /* PostCD+CoreDataClass.swift */,
+				99F1A15C2CD37E8300F6036B /* PostCD+CoreDataProperties.swift */,
+				99F1A14E2CD36D6200F6036B /* PlaceCD+CoreDataClass.swift */,
+				99F1A14F2CD36D6200F6036B /* PlaceCD+CoreDataProperties.swift */,
+				99F1A13B2CD353D900F6036B /* ImageData+CoreDataClass.swift */,
+				99F1A13C2CD353D900F6036B /* ImageData+CoreDataProperties.swift */,
+				99F1A13D2CD353D900F6036B /* TrickCD+CoreDataClass.swift */,
+				99F1A13E2CD353D900F6036B /* TrickCD+CoreDataProperties.swift */,
+				99F1A1212CD30CC900F6036B /* ProgramCD+CoreDataClass.swift */,
+				99F1A1222CD30CC900F6036B /* ProgramCD+CoreDataProperties.swift */,
+				99F1A1232CD30CC900F6036B /* CompetitionCD+CoreDataClass.swift */,
+				99F1A1242CD30CC900F6036B /* CompetitionCD+CoreDataProperties.swift */,
+				99F1A10A2CD2E27E00F6036B /* Income+CoreDataClass.swift */,
+				99F1A10B2CD2E27E00F6036B /* Income+CoreDataProperties.swift */,
+				99F1A10C2CD2E27E00F6036B /* AffiliateProgram+CoreDataClass.swift */,
+				99F1A10D2CD2E27E00F6036B /* AffiliateProgram+CoreDataProperties.swift */,
+			);
+			path = Sub;
+			sourceTree = "<group>";
+		};
+		99F1A1132CD2E5ED00F6036B /* EditStats */ = {
+			isa = PBXGroup;
+			children = (
+				99F1A1142CD2E60C00F6036B /* EditIncomeView.swift */,
+				99F1A1162CD2EC6D00F6036B /* EditAffiliationView.swift */,
+			);
+			path = EditStats;
+			sourceTree = "<group>";
+		};
+		99F1A1182CD2F09400F6036B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99F1A1192CD2F09F00F6036B /* Competition.swift */,
+				99F1A1352CD3406900F6036B /* Trick.swift */,
+				99F1A14A2CD366CC00F6036B /* Place.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		99F1A1302CD3371A00F6036B /* Tricks */ = {
+			isa = PBXGroup;
+			children = (
+				99F1A1312CD3372900F6036B /* TricksView.swift */,
+				99F1A1332CD3373700F6036B /* TricksViewModel.swift */,
+				99F1A1372CD3412D00F6036B /* NewTrick.swift */,
+				99F1A1432CD355F200F6036B /* TrickDetail.swift */,
+				99F1A1452CD35B9D00F6036B /* EditTrickView.swift */,
+			);
+			path = Tricks;
+			sourceTree = "<group>";
+		};
+		99F1A1472CD365C400F6036B /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				99F1A1482CD365DC00F6036B /* PlacesView.swift */,
+				99F1A14C2CD3686600F6036B /* AddPlaceView.swift */,
+			);
+			path = Places;
+			sourceTree = "<group>";
+		};
+		99F1A1522CD372DA00F6036B /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				99F1A1532CD372E600F6036B /* PostsView.swift */,
+				99F1A1552CD3745600F6036B /* NewPost.swift */,
+				99F1A1572CD3760000F6036B /* PostDetail.swift */,
+				99F1A1592CD37B8200F6036B /* EditPost.swift */,
+			);
+			path = Posts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +389,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99F1A1462CD35B9D00F6036B /* EditTrickView.swift in Sources */,
+				99F1A1252CD30CC900F6036B /* ProgramCD+CoreDataClass.swift in Sources */,
+				99F1A12F2CD32BD400F6036B /* EditProgramView.swift in Sources */,
+				99F1A1262CD30CC900F6036B /* ProgramCD+CoreDataProperties.swift in Sources */,
+				99F1A1272CD30CC900F6036B /* CompetitionCD+CoreDataClass.swift in Sources */,
+				99F1A1282CD30CC900F6036B /* CompetitionCD+CoreDataProperties.swift in Sources */,
 				99F1A0822CCA2D6A00F6036B /* ContentView.swift in Sources */,
+				99F1A11E2CD2F7CE00F6036B /* AddTextField.swift in Sources */,
+				99F1A15D2CD37E8400F6036B /* PostCD+CoreDataClass.swift in Sources */,
+				99F1A15E2CD37E8400F6036B /* PostCD+CoreDataProperties.swift in Sources */,
+				99F1A1502CD36D6200F6036B /* PlaceCD+CoreDataClass.swift in Sources */,
+				99F1A1512CD36D6200F6036B /* PlaceCD+CoreDataProperties.swift in Sources */,
+				99F1A1052CD2E19400F6036B /* Storage.xcdatamodeld in Sources */,
+				99F1A12C2CD327D700F6036B /* EditCompetition.swift in Sources */,
+				99F1A1202CD2FD2000F6036B /* AddProgramView.swift in Sources */,
+				99F1A0952CCA2DF900F6036B /* CreateAccountViewModel.swift in Sources */,
+				99F1A1542CD372E600F6036B /* PostsView.swift in Sources */,
+				99F1A1172CD2EC6D00F6036B /* EditAffiliationView.swift in Sources */,
+				99F1A1092CD2E20400F6036B /* StorageManager.swift in Sources */,
+				99F1A1362CD3406900F6036B /* Trick.swift in Sources */,
+				99F1A1582CD3760000F6036B /* PostDetail.swift in Sources */,
+				99F1A10E2CD2E27E00F6036B /* Income+CoreDataClass.swift in Sources */,
+				99F1A10F2CD2E27E00F6036B /* Income+CoreDataProperties.swift in Sources */,
+				99F1A1382CD3412D00F6036B /* NewTrick.swift in Sources */,
+				99F1A1602CD37FC000F6036B /* Settings.swift in Sources */,
+				99F1A1102CD2E27E00F6036B /* AffiliateProgram+CoreDataClass.swift in Sources */,
+				99F1A1112CD2E27E00F6036B /* AffiliateProgram+CoreDataProperties.swift in Sources */,
+				99F1A1342CD3373700F6036B /* TricksViewModel.swift in Sources */,
+				99F1A0FF2CD2DBA300F6036B /* CompetitionsView.swift in Sources */,
+				99F1A0902CCA2DCF00F6036B /* Splash.swift in Sources */,
+				99F1A12A2CD319FC00F6036B /* CompetitionDetails.swift in Sources */,
+				99F1A1152CD2E60C00F6036B /* EditIncomeView.swift in Sources */,
+				99F1A13A2CD346B300F6036B /* ImageView.swift in Sources */,
+				99F1A0972CCA2E1E00F6036B /* ViewModelFactory.swift in Sources */,
+				99F1A1322CD3372900F6036B /* TricksView.swift in Sources */,
+				99F1A1072CD2E1DA00F6036B /* CoreDataStack.swift in Sources */,
+				99F1A0932CCA2DEF00F6036B /* CreateAccountView.swift in Sources */,
+				99F1A15A2CD37B8300F6036B /* EditPost.swift in Sources */,
+				99F1A11C2CD2F67300F6036B /* NewCompetitionView.swift in Sources */,
+				99F1A14B2CD366CC00F6036B /* Place.swift in Sources */,
+				99F1A0992CCA2E2E00F6036B /* DataC.swift in Sources */,
+				99F1A1442CD355F200F6036B /* TrickDetail.swift in Sources */,
+				99F1A13F2CD353D900F6036B /* ImageData+CoreDataClass.swift in Sources */,
+				99F1A1402CD353D900F6036B /* ImageData+CoreDataProperties.swift in Sources */,
+				99F1A1562CD3745700F6036B /* NewPost.swift in Sources */,
+				99F1A1412CD353D900F6036B /* TrickCD+CoreDataClass.swift in Sources */,
+				99F1A1492CD365DD00F6036B /* PlacesView.swift in Sources */,
+				99F1A1422CD353D900F6036B /* TrickCD+CoreDataProperties.swift in Sources */,
+				99F1A09E2CCA2E7500F6036B /* Tab.swift in Sources */,
+				99F1A09C2CCA2E5500F6036B /* CustomTF.swift in Sources */,
 				99F1A0802CCA2D6A00F6036B /* App1045App.swift in Sources */,
+				99F1A11A2CD2F09F00F6036B /* Competition.swift in Sources */,
+				99F1A1012CD2DCA100F6036B /* CompetitionsViewModel.swift in Sources */,
+				99F1A14D2CD3686600F6036B /* AddPlaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +501,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +558,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -274,21 +578,27 @@
 				DEVELOPMENT_ASSET_PATHS = "\"App1045/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Esport Skate Sorte Evolution";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nobody12.App1045;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ser.esp0rtsk4t3s0rte;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,21 +612,27 @@
 				DEVELOPMENT_ASSET_PATHS = "\"App1045/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Esport Skate Sorte Evolution";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nobody12.App1045;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ser.esp0rtsk4t3s0rte;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -342,6 +658,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		99F1A1032CD2E19400F6036B /* Storage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				99F1A1042CD2E19400F6036B /* Storage.xcdatamodel */,
+			);
+			currentVersion = 99F1A1042CD2E19400F6036B /* Storage.xcdatamodel */;
+			path = Storage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 99F1A0742CCA2D6900F6036B /* Project object */;
 }

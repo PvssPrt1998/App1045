@@ -1,21 +1,20 @@
-//
-//  ContentView.swift
-//  App1045
-//
-//  Created by Николай Щербаков on 24.10.2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    
+    @AppStorage("firstLaunch") var firstLaunch = true
+    @State var showSplash = true
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if showSplash {
+            Splash(showSplash: $showSplash, dataC: ViewModelFactory.shared.dataC)
+        } else {
+            if firstLaunch {
+                CreateAccountView(viewModel: ViewModelFactory.shared.makeCreateAcccountViewModel(), show: $firstLaunch)
+            } else {
+                Tab()
+            }
         }
-        .padding()
     }
 }
 
