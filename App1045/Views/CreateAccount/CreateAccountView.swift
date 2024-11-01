@@ -10,26 +10,33 @@ struct CreateAccountView: View {
     var body: some View {
         ZStack {
             Color.bgMain.ignoresSafeArea()
-            VStack(spacing: 0) {
-                header
-                fillData
-                Button {
-                    nextButtonPressed()
-                } label: {
-                    Text("Next")
-                        .font(.system(size: 14, weight: .bold))
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 50)
-                        .background(Color.cPrimary)
-                        .clipShape(.rect(cornerRadius: 12))
+                .onTapGesture {
+                    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to:nil, from:nil, for:nil)
                 }
-                .disabled(buttonDisabled)
-                .opacity(buttonDisabled ? 0.6 : 1)
-                .padding(.horizontal, 15)
-                .padding(.bottom, 8)
+            header
+                .frame(maxHeight: .infinity, alignment: .top)
+            VStack(spacing: 0) {
+                fillData
+                
             }
-            .frame(maxHeight: .infinity, alignment: .top)
+            
+            Button {
+                nextButtonPressed()
+            } label: {
+                Text("Next")
+                    .font(.system(size: 14, weight: .bold))
+                    .foregroundColor(.white)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 50)
+                    .background(Color.cPrimary)
+                    .clipShape(.rect(cornerRadius: 12))
+            }
+            .disabled(buttonDisabled)
+            .opacity(buttonDisabled ? 0.6 : 1)
+            .padding(.horizontal, 15)
+            .padding(.bottom, 8)
+            .frame(maxHeight: .infinity, alignment: .bottom)
+            .ignoresSafeArea(.keyboard)
         }
     }
     
@@ -91,6 +98,7 @@ struct CreateAccountView: View {
     }
     private var textFields: some View {
         VStack(spacing: 15) {
+            ImageView(imageData: $viewModel.imageData)
             CustomTF(text: $viewModel.nameText, prefix: "Name", placeholder: "Enter")
             CustomTF(text: $viewModel.ageText, prefix: "Age category", placeholder: "Enter")
         }
@@ -153,7 +161,7 @@ struct CreateAccountView: View {
     
     private var buttonDisabled: Bool {
         if stage1 {
-            if viewModel.nameText == "" || viewModel.ageText == "" {
+            if viewModel.nameText == "" || viewModel.ageText == "" || viewModel.imageData == nil {
                 return true
             } else {
                 return false

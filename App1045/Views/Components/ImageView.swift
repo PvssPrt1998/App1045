@@ -19,17 +19,18 @@ struct ImageView: View {
                         .scaledToFill()
                         .clipped()
                 }
-                .frame(width: 192, height: 170)
+                .frame(width: 164, height: 145)
+                .clipShape(.rect(cornerRadius: 20))
             } else {
                 Image(systemName: "camera.fill")
                     .font(.system(size: 20, weight: .regular))
                     .foregroundColor(.cSecondary)
-                    .frame(width: 192, height: 170)
-                    .background(Color.white.opacity(0.1))
-                    .clipShape(.rect(cornerRadius: 24))
-                    .frame(width: 192, height: 170)
+                    .frame(width: 164, height: 145)
+                    .clipShape(.rect(cornerRadius: 20))
             }
         }
+        .frame(width: 164, height: 145)
+        .clipShape(.rect(cornerRadius: 20))
         .onTapGesture {
             showingImagePicker = true
         }

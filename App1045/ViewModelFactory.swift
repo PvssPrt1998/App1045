@@ -62,4 +62,10 @@ final class ViewModelFactory {
     func makeEditPostViewModel(_ post: Post) -> EditPostViewModel {
         EditPostViewModel(dataC: dataC, post: post)
     }
+    func settingsViewModel() -> SettingsViewModel {
+        SettingsViewModel(dataC: dataC)
+    }
+    func makeEditProfileViewModel() -> EditProfileViewModel {
+        EditProfileViewModel(dataC: dataC)
+    }
 }

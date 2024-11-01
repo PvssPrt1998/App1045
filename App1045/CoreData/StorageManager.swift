@@ -264,4 +264,50 @@ final class StorageManager {
         coreDataStack.managedContext.delete(postCD)
         coreDataStack.saveContext()
     }
+    
+    func saveOrEditAccount(name: String, age: String, imageData: Data) {
+        do {
+            let accounts = try coreDataStack.managedContext.fetch(Account.fetchRequest())
+            if accounts.count > 0 {
+                //exists
+                accounts[0].name = name
+                accounts[0].age = age
+                accounts[0].image = imageData
+            } else {
+                let account =  Account(context: coreDataStack.managedContext)
+                account.name = name
+                account.age = age
+                account.image = imageData
+            }
+            coreDataStack.saveContext()
+        } catch let error as NSError {
+            print("Unresolved error \(error), \(error.userInfo)")
+        }
+    }
+    
+    func fetchAccount() throws -> (String, String, Data)? {
+        guard let account = try coreDataStack.managedContext.fetch(Account.fetchRequest()).first else { return nil }
+        return (account.name, account.age, account.image)
+    }
+    
+    func saveChoice(_ choice: Bool) {
+        do {
+            let choices = try coreDataStack.managedContext.fetch(Choice.fetchRequest())
+            if choices.count > 0 {
+                //exists
+                choices[0].isOwn = choice
+            } else {
+                let choiceCD = Choice(context: coreDataStack.managedContext)
+                choiceCD.isOwn = choice
+            }
+            coreDataStack.saveContext()
+        } catch let error as NSError {
+            print("Unresolved error \(error), \(error.userInfo)")
+        }
+    }
+    
+    func fetchChoice() throws -> Bool? {
+        guard let choice = try coreDataStack.managedContext.fetch(Choice.fetchRequest()).first else { return nil }
+        return choice.isOwn
+    }
 }

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23C71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Account" representedClassName=".Account" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="AffiliateProgram" representedClassName=".AffiliateProgram" syncable="YES">
         <attribute name="value" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Choice" representedClassName=".Choice" syncable="YES">
+        <attribute name="isOwn" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
     </entity>
     <entity name="CompetitionCD" representedClassName=".CompetitionCD" syncable="YES">
         <attribute name="date" optional="YES" attributeType="String"/>

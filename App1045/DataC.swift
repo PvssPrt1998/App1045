@@ -4,8 +4,11 @@ final class DataC: ObservableObject {
     
     let storageManager = StorageManager()
     
-    var name: String = ""
-    var age: String = ""
+    @Published var isOwn: Bool?
+    @Published var accountImage: Data?
+    
+    @Published var name: String = ""
+    @Published var age: String = ""
     
     var loaded = false
     @Published var income = 0
@@ -38,11 +41,29 @@ final class DataC: ObservableObject {
             if let posts = try? storageManager.fetchPost() {
                 self.posts = posts
             }
+            if let account = try? storageManager.fetchAccount() {
+                self.name = account.0
+                self.age = account.1
+                self.accountImage = account.2
+            }
+            if let choice = try? storageManager.fetchChoice() {
+                self.isOwn = choice
+            }
             
             DispatchQueue.main.async {
                 self.loaded = true
             }
         }
+    }
+    
+    func saveAccount() {
+        guard let imageData = accountImage else { return }
+        storageManager.saveOrEditAccount(name: name, age: age, imageData: imageData)
+    }
+    
+    func saveChoice() {
+        guard let isOwn = isOwn else { return }
+        storageManager.saveChoice(isOwn)
     }
     
     func saveIncome(_ income: Int) {

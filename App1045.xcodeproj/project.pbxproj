@@ -63,6 +63,12 @@
 		99F1A15D2CD37E8400F6036B /* PostCD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A15B2CD37E8300F6036B /* PostCD+CoreDataClass.swift */; };
 		99F1A15E2CD37E8400F6036B /* PostCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A15C2CD37E8300F6036B /* PostCD+CoreDataProperties.swift */; };
 		99F1A1602CD37FC000F6036B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A15F2CD37FC000F6036B /* Settings.swift */; };
+		99F1A1652CD5103D00F6036B /* Choice+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1612CD5103D00F6036B /* Choice+CoreDataClass.swift */; };
+		99F1A1662CD5103D00F6036B /* Choice+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1622CD5103D00F6036B /* Choice+CoreDataProperties.swift */; };
+		99F1A1672CD5103D00F6036B /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1632CD5103D00F6036B /* Account+CoreDataClass.swift */; };
+		99F1A1682CD5103D00F6036B /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1642CD5103D00F6036B /* Account+CoreDataProperties.swift */; };
+		99F1A16A2CD51A6A00F6036B /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1692CD51A6A00F6036B /* EditProfileView.swift */; };
+		99F1A16C2CD52C7A00F6036B /* ImageViewWithoutGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A16B2CD52C7A00F6036B /* ImageViewWithoutGesture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +129,12 @@
 		99F1A15B2CD37E8300F6036B /* PostCD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostCD+CoreDataClass.swift"; sourceTree = "<group>"; };
 		99F1A15C2CD37E8300F6036B /* PostCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		99F1A15F2CD37FC000F6036B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		99F1A1612CD5103D00F6036B /* Choice+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Choice+CoreDataClass.swift"; sourceTree = "<group>"; };
+		99F1A1622CD5103D00F6036B /* Choice+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Choice+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		99F1A1632CD5103D00F6036B /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
+		99F1A1642CD5103D00F6036B /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		99F1A1692CD51A6A00F6036B /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		99F1A16B2CD52C7A00F6036B /* ImageViewWithoutGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewWithoutGesture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +200,7 @@
 				99F1A08E2CCA2DC400F6036B /* Splash */,
 				99F1A09D2CCA2E7500F6036B /* Tab.swift */,
 				99F1A15F2CD37FC000F6036B /* Settings.swift */,
+				99F1A1692CD51A6A00F6036B /* EditProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,6 +228,7 @@
 				99F1A09B2CCA2E5500F6036B /* CustomTF.swift */,
 				99F1A11D2CD2F7CE00F6036B /* AddTextField.swift */,
 				99F1A1392CD346B300F6036B /* ImageView.swift */,
+				99F1A16B2CD52C7A00F6036B /* ImageViewWithoutGesture.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -248,6 +262,10 @@
 		99F1A1122CD2E28200F6036B /* Sub */ = {
 			isa = PBXGroup;
 			children = (
+				99F1A1612CD5103D00F6036B /* Choice+CoreDataClass.swift */,
+				99F1A1622CD5103D00F6036B /* Choice+CoreDataProperties.swift */,
+				99F1A1632CD5103D00F6036B /* Account+CoreDataClass.swift */,
+				99F1A1642CD5103D00F6036B /* Account+CoreDataProperties.swift */,
 				99F1A15B2CD37E8300F6036B /* PostCD+CoreDataClass.swift */,
 				99F1A15C2CD37E8300F6036B /* PostCD+CoreDataProperties.swift */,
 				99F1A14E2CD36D6200F6036B /* PlaceCD+CoreDataClass.swift */,
@@ -402,7 +420,12 @@
 				99F1A1502CD36D6200F6036B /* PlaceCD+CoreDataClass.swift in Sources */,
 				99F1A1512CD36D6200F6036B /* PlaceCD+CoreDataProperties.swift in Sources */,
 				99F1A1052CD2E19400F6036B /* Storage.xcdatamodeld in Sources */,
+				99F1A16C2CD52C7A00F6036B /* ImageViewWithoutGesture.swift in Sources */,
 				99F1A12C2CD327D700F6036B /* EditCompetition.swift in Sources */,
+				99F1A1652CD5103D00F6036B /* Choice+CoreDataClass.swift in Sources */,
+				99F1A1662CD5103D00F6036B /* Choice+CoreDataProperties.swift in Sources */,
+				99F1A1672CD5103D00F6036B /* Account+CoreDataClass.swift in Sources */,
+				99F1A1682CD5103D00F6036B /* Account+CoreDataProperties.swift in Sources */,
 				99F1A1202CD2FD2000F6036B /* AddProgramView.swift in Sources */,
 				99F1A0952CCA2DF900F6036B /* CreateAccountViewModel.swift in Sources */,
 				99F1A1542CD372E600F6036B /* PostsView.swift in Sources */,
@@ -428,6 +451,7 @@
 				99F1A0932CCA2DEF00F6036B /* CreateAccountView.swift in Sources */,
 				99F1A15A2CD37B8300F6036B /* EditPost.swift in Sources */,
 				99F1A11C2CD2F67300F6036B /* NewCompetitionView.swift in Sources */,
+				99F1A16A2CD51A6A00F6036B /* EditProfileView.swift in Sources */,
 				99F1A14B2CD366CC00F6036B /* Place.swift in Sources */,
 				99F1A0992CCA2E2E00F6036B /* DataC.swift in Sources */,
 				99F1A1442CD355F200F6036B /* TrickDetail.swift in Sources */,
