@@ -310,4 +310,17 @@ final class StorageManager {
         guard let choice = try coreDataStack.managedContext.fetch(Choice.fetchRequest()).first else { return nil }
         return choice.isOwn
     }
+    
+    func removeAccount() throws {
+        let choices = try coreDataStack.managedContext.fetch(Choice.fetchRequest())
+        if choices.count > 0 {
+            coreDataStack.managedContext.delete(choices[0])
+        }
+        let accounts = try coreDataStack.managedContext.fetch(Account.fetchRequest())
+        if accounts.count > 0 {
+            coreDataStack.managedContext.delete(accounts[0])
+        }
+        
+        coreDataStack.saveContext()
+    }
 }

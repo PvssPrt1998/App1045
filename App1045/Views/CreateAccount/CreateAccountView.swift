@@ -82,7 +82,7 @@ struct CreateAccountView: View {
     }
     private var text: some View {
         VStack(spacing: 10) {
-            Text("Let's create\nyour account")
+            Text("Let's create\nyour profile")
                 .font(.largeTitle.bold())
                 .multilineTextAlignment(.center)
                 .foregroundColor(.white)

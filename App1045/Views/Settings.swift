@@ -7,6 +7,7 @@ struct Settings: View {
     @StateObject var viewModel = ViewModelFactory.shared.settingsViewModel()
     @Environment(\.openURL) var openURL
     @State var showEditProfile = false
+    @State var showDeleteAlert = false
     
     var body: some View {
         ZStack {
@@ -17,12 +18,35 @@ struct Settings: View {
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .overlay(
-                        Button {
-                            showEditProfile = true
-                        } label: {
-                            Image(systemName: "pencil")
-                                .frame(width: 24, height: 24)
-                                .foregroundColor(.white)
+                        HStack(spacing: 16) {
+                            Button {
+                                showEditProfile = true
+                            } label: {
+                                Image(systemName: "pencil")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 24, height: 22)
+                                    .foregroundColor(.white)
+                            }
+                            
+                            if !viewModel.isAccountEmpty {
+                                Button {
+                                    withAnimation {
+                                        showDeleteAlert = true
+                                    }
+                                } label: {
+                                    Image(systemName: "trash.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 24, height: 22)
+                                        .foregroundColor(.white)
+                                }
+                                .alert(isPresented: $showDeleteAlert) {
+                                    Alert(title: Text("Delete"), message: Text("Are you sure you want to delete?"), primaryButton: .default(Text("Delete"), action: {
+                                        viewModel.delete()
+                                    }), secondaryButton: .destructive(Text("Close")))
+                                }
+                            }
                         }
                         ,alignment: .trailing
                     )
@@ -151,7 +175,7 @@ struct Settings: View {
             .frame(maxHeight: .infinity, alignment: .top)
         }
         .sheet(isPresented: $showEditProfile, content: {
-            EditProfileView(show: $showEditProfile, image: $viewModel.imageData)
+            EditProfileView(show: $showEditProfile)
         })
     }
     
@@ -199,6 +223,10 @@ final class SettingsViewModel: ObservableObject {
     
     let dataC: DataC
     
+    var isAccountEmpty: Bool {
+        name == "" && age == "" && imageData == nil && isOwn == nil
+    }
+    
     @Published var name: String
     @Published var age: String
     @Published var imageData: Data?
@@ -229,5 +257,13 @@ final class SettingsViewModel: ObservableObject {
         isOwnCancellable = dataC.$isOwn.sink { [weak self] value in
             self?.isOwn = value
         }
+    }
+    
+    func delete() {
+        dataC.name = ""
+        dataC.age = ""
+        dataC.accountImage = nil
+        dataC.isOwn = nil
+        dataC.deleteAccount()
     }
 }

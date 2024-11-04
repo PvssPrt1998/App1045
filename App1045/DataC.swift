@@ -56,6 +56,10 @@ final class DataC: ObservableObject {
         }
     }
     
+    func deleteAccount() {
+        try? storageManager.removeAccount()
+    }
+    
     func saveAccount() {
         guard let imageData = accountImage else { return }
         storageManager.saveOrEditAccount(name: name, age: age, imageData: imageData)

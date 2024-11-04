@@ -5,7 +5,6 @@ struct EditProfileView: View {
     
     @ObservedObject var viewModel = ViewModelFactory.shared.makeEditProfileViewModel()
     @Binding var show: Bool
-    @Binding var image: Data?
     
     var body: some View {
         ZStack {
@@ -24,7 +23,7 @@ struct EditProfileView: View {
                         textFields
                         choseViews
                         Button {
-                            viewModel.savePressed(image)
+                            viewModel.savePressed(viewModel.imageData)
                             show = false
                         } label: {
                             Text("Save")
@@ -35,8 +34,8 @@ struct EditProfileView: View {
                                 .background(Color.cPrimary)
                                 .clipShape(.rect(cornerRadius: 12))
                         }
-                        .disabled(viewModel.disabled || image == nil)
-                        .opacity(viewModel.disabled || image == nil ? 0.6 : 1)
+                        .disabled(viewModel.disabled)
+                        .opacity(viewModel.disabled ? 0.6 : 1)
                     }
                     .padding(.bottom, 20)
                 }
@@ -48,13 +47,13 @@ struct EditProfileView: View {
     
     private var textFields: some View {
         VStack(spacing: 15) {
-            ImageView(imageData: $image, image: setImage())
+            ImageView(imageData: $viewModel.imageData, image: setImage())
             CustomTF(text: $viewModel.name, prefix: "Name", placeholder: "Enter")
             CustomTF(text: $viewModel.age, prefix: "Age category", placeholder: "Enter")
         }
     }
     private func setImage() -> Image? {
-        if let imageData = image,
+        if let imageData = viewModel.imageData,
            let image = UIImage(data: imageData) {
             return Image(uiImage: image)
         } else {
@@ -123,10 +122,10 @@ final class EditProfileViewModel: ObservableObject {
     let dataC: DataC
     
     var disabled: Bool {
-        name == "" || age == "" || isOwn == nil
+        name == "" || age == "" || isOwn == nil || imageData == nil
     }
     
-    //@Published var imageData: Data?
+    @Published var imageData: Data?
     @Published var name: String
     @Published var age: String
     @Published var isOwn: Bool?
